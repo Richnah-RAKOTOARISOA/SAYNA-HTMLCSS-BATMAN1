@@ -1,0 +1,356 @@
+@font-face{font-family:'Rajdhani'; src:url("Rajdhani-Medium.ttf");}
+@font-face{font-family:'SpaceGrotesk-bold'; src:url("SpaceGrotesk-Bold.ttf");}
+@font-face{font-family:'SpaceGrotesk'; src:url("SpaceGrotesk-Regular.ttf");}
+
+body{
+	position: absolute; /* pour que les lignes suivent l'écran */
+	width: 100vw;
+	margin: 0; /* coller la page aux contours */
+	color: #fff;
+	background: #000 url("Bathome1.png") no-repeat top center;
+	background-size: 100% auto;
+	font-family: "SpaceGrotesk";
+	font-size: 12px;
+}
+
+div{
+	position: relative; /* impacte positif sur les élements absolute */
+}
+
+img{
+	max-width: 100%; /* respecter le contenant */
+}
+
+button{
+	font-family: "Rajdhani";
+	font-size: 20px;
+}
+
+h1,h2{
+	margin: 0; /* eviter espacements */
+}
+
+h1{
+	font-family: "Rajdhani";
+	font-size: 36px;
+}
+
+h2{
+	font-family: "SpaceGrotesk-bold";
+	font-size: 12px;
+}
+
+aside{
+	position: fixed; /* hors scroll */
+	z-index: 7; /* element assez important */
+	right: calc(8.9vw - 40px); /*collé à droite*/
+	top: calc(50vh - 140px);
+}
+
+form .form_spacer, form input[type=text], form input[type=mail], form select{
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #888;
+	padding: .2rem 0;
+	color: #888;
+}
+
+form input[type=text], form input[type=mail], form select{
+	width: 100%;
+}
+
+form p{
+	color: #888;
+}
+
+.lines{
+	background: #BCBBBD30;
+}
+
+.lines.l1{
+	width: calc(80vw - 8px);
+	left: calc(10vw + 4px);
+	top: 20vh;
+	height: 4px;
+}
+
+.lines.l2{
+	width: 4px;
+	left: 10vw;
+	top: 0;
+	height: 100%;
+}
+
+.lines.l3{
+	width: 4px;
+	right: 10vw;
+	top: 0;
+	height: 100%;
+}
+
+h1.underline:hover{
+	color: #FFFF00;
+	cursor: pointer;
+}
+
+.hover_yellow:hover{
+	filter: sepia(100%) hue-rotate(0deg) saturate(10);
+	cursor: pointer;
+}
+
+.in_mx20>div>img:hover{
+    transform: scale(1.1); /* zoom 10% */
+}
+
+.contact{
+	background: linear-gradient(315deg, #0A2636, #666053 100%); /*version opaque du fond*/
+	border: 1px solid;
+	border-image: linear-gradient(315deg, #19587D66, #EDDEBF66 100%) 1;
+}
+
+.bt_simple{
+	border: none; /*Pas de contour*/
+	border-radius: 0; /*Pas d'arrondi de contour*/
+	background: none;
+	font-size: 18px; /*Taille de police du bouton*/
+}
+
+.bt_gradient_w{
+	padding: 1rem 3rem; /*Espacement interne du bouton*/
+	background: linear-gradient(to right, #EDDEBF66, #89000899 100%);
+	color: #fff; /*Couleur du texte du bouton*/
+    transition: all 0.2s ease;
+}
+
+.bt_gradient_t{
+	padding: .8rem calc(1vw + 1rem); /*Espacement interne du bouton*/
+	border: 1px solid;
+	border-image: linear-gradient(315deg, #19587D, #EDDEBF 100%) 1;
+	color: #fff; /*Couleur du texte du bouton*/
+    transition: all 0.2s ease;
+}
+
+.bt_gradient_w:hover{
+	background: linear-gradient(to right, #EDDEBF99, #890008 100%); /*version opaque du fond*/
+    cursor:pointer;
+}
+.bt_gradient_t:hover{
+    background: #fff4;
+    cursor:pointer;
+}
+
+.img_add_rt{
+	left: 5rem;
+	top: -5rem;
+}
+
+.img_add_rt>img{
+	width: 9rem;
+}
+
+.imdb_fond{
+	background: linear-gradient(315deg, #19587D66, #EDDEBF66 100%);
+	box-shadow: 0 0 0 2px #fff1 inset;
+	border-top-right-radius: 9px;
+	border-bottom-right-radius: 9px;
+}
+
+.imdb_img{
+	min-width: 155px;
+	height: 230px;
+	background: url('Bathome_ba1.png');
+}
+
+.imdb_desc{
+	width: 36vw;
+	max-width: 360px;
+	padding: .8rem 1.0rem;
+}
+
+.imdb_note{
+	color: #ff0;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.large-font{
+	font-size: 20px;
+}
+
+.medium-font{
+	font-size: 18px;
+}
+
+.xlarge-font{
+	font-size: 22px;
+}
+
+.abs{
+	position: absolute;
+}
+
+.l0{
+	left: 0;
+}
+
+.t0{
+	top: 0;
+}
+
+.flex{
+	display: flex;
+}
+
+.flexbetween{
+	justify-content: space-between;
+}
+
+.flex_center{
+	justify-content: center;
+}
+
+.tac{
+	text-align: center;
+}
+
+.tar{
+	text-align: right;
+}
+
+.justif_text{
+	text-align: justify;
+}
+
+.v_center{
+	align-items: center;
+}
+
+.lh16{
+	line-height: 1.6rem;
+}
+
+.paragraphs{
+	margin-bottom: 50px;
+}
+
+.in_mx20>div{
+	max-width: 30%;
+}
+
+
+.in_mx20>div>img{
+    transition: transform 0.2s ease;
+}
+
+.in_px1v>div{
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+.ma{
+	margin: auto;
+}
+
+.w100v{
+	width: 100vw;
+}
+
+.w15v{
+	width: 15vw;
+}
+
+.w35v{
+	width: 35vw;
+}
+
+.w50v{
+	width: 50vw;
+}
+
+.w60v{
+	width: 60vw;
+}
+
+.w70v{
+	width: 70vw;
+}
+
+.mr15{
+	margin-right: 1.5rem;
+}
+
+.ml25{
+	margin-left: 2.5rem;
+}
+
+.mt7v{
+	margin-top: 7vh;
+}
+
+.mt16v{
+	margin-top: 16vh;
+}
+
+.mt45v{
+	margin-top: 45vh;
+}
+
+.mt25v{
+	margin-top: 25vh;
+}
+
+.mt4{
+	margin-top: .4rem;
+}
+
+.mt8{
+	margin-top: .8rem;
+}
+
+.mt16{
+	margin-top: 1.6rem;
+}
+
+.mt30{
+	margin-top: 3rem;
+}
+
+.mt40{
+	margin-top: 4rem;
+}
+
+.mt90{
+	margin-top: 9rem;
+}
+
+.mb8{
+	margin-bottom: .8rem;
+}
+
+.mb20{
+	margin-bottom: 2rem;
+}
+
+.mx5v{
+	margin-left: 12vw;
+	margin-right: 12vw;
+}
+
+.pr9v{
+	padding-right: 9vw;
+}
+
+.pt8{
+	padding-top: .8rem;
+}
+
+.py30{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.pb100{
+	padding-bottom: 10rem;
+}
